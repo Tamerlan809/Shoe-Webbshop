@@ -1,0 +1,62 @@
+public class Kund {
+    protected  int id;
+    protected String personnummer;
+    protected String namn;
+    protected String ort;
+    protected String lösenord;
+
+    public Kund(){}
+
+    public Kund(int id, String personnummer, String namn, String ort, String lösenord) {
+        this.id = id;
+        this.personnummer = personnummer;
+        this.namn = namn;
+        this.ort = ort;
+        this.lösenord = lösenord;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPersonnummer() {
+        return personnummer;
+    }
+
+    public void setPersonnummer(String personnummer) {
+        this.personnummer = personnummer;
+    }
+
+    public String getNamn() {
+        return namn;
+    }
+
+    public void setNamn(String namn) {
+        this.namn = namn;
+    }
+
+    public String getOrt() {
+        return ort;
+    }
+
+    public void setOrt(String ort) {
+        this.ort = ort;
+    }
+
+    public String getLösenord() {
+        return lösenord;
+    }
+
+    public void setLösenord(String lösenord) {
+        this.lösenord = lösenord;
+    }
+
+    public String getKundDataByNameAndOrt(){
+        return "Kundens namn: " + namn + " * "
+                + "Ort namn: " + ort;
+    }
+}
