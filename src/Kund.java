@@ -1,12 +1,16 @@
-public class Kund {
-    protected  int id;
-    protected String personnummer;
-    protected String namn;
-    protected String ort;
-    protected String lösenord;
 
+//Customer class represents kund table with details.
+public class Kund {
+    protected  int id; //unique id
+    protected String personnummer; //social security number of customer
+    protected String namn; //name of the customer
+    protected String ort; //county that customer is placing beställning from.
+    protected String lösenord; //password of the customer.
+
+    //default constructor.
     public Kund(){}
 
+    //Constructor to initialize a Customer object with values for each field.
     public Kund(int id, String personnummer, String namn, String ort, String lösenord) {
         this.id = id;
         this.personnummer = personnummer;
@@ -15,6 +19,7 @@ public class Kund {
         this.lösenord = lösenord;
     }
 
+    //getters and setters.
     public int getId() {
         return id;
     }
@@ -55,6 +60,10 @@ public class Kund {
         this.lösenord = lösenord;
     }
 
+<<<<<<< HEAD
+=======
+    //Method to return info about customer's name and county.
+>>>>>>> 3a437eb (Added comments to clarify code.)
     public String getKundDataByNameAndOrt(){
         return "Kundens namn: " + namn + " * "
                 + "Ort namn: " + ort;
