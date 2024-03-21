@@ -60,10 +60,8 @@ public class Kund {
         this.lösenord = lösenord;
     }
 
-<<<<<<< HEAD
-=======
+
     //Method to return info about customer's name and county.
->>>>>>> 3a437eb (Added comments to clarify code.)
     public String getKundDataByNameAndOrt(){
         return "Kundens namn: " + namn + " * "
                 + "Ort namn: " + ort;
